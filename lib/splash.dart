@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:furniture/dashboard.dart';
 
 class Splash extends StatelessWidget {
   @override
@@ -85,9 +86,14 @@ class Splash extends StatelessWidget {
                                   Positioned.fill(
                                     child: Align(
                                       alignment: Alignment.center,
-                                      child: Container(
-                                        width:double.infinity,
-                                        child: Text("Get Started",textAlign: TextAlign.center,style: TextStyle(color: Colors.white,fontFamily: 'Poppinsnormal',fontSize: 16.0,fontWeight: FontWeight.w400),),
+                                      child: GestureDetector(
+                                        onTap: (){
+                                          Navigator.push(context, MaterialPageRoute(builder: (context)=>Dashboard()));
+                                        },
+                                        child: Container(
+                                          width:double.infinity,
+                                          child: Text("Get Started",textAlign: TextAlign.center,style: TextStyle(color: Colors.white,fontFamily: 'Poppinsnormal',fontSize: 16.0,fontWeight: FontWeight.w400),),
+                                        ),
                                       ),
                                     ),
                                   ),

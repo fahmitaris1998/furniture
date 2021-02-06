@@ -103,6 +103,7 @@ class Home extends StatelessWidget {
                                   SizedBox(height: 10,),
                                   Expanded(
                                       child: ListView.builder(
+                                        physics: BouncingScrollPhysics(),
                                         scrollDirection: Axis.horizontal,
                                         itemCount: 2,
                                           itemBuilder: (context,index){

@@ -14,7 +14,7 @@ class CardHome extends StatelessWidget {
     return Container(
       height: double.infinity,
       width: 230,
-      margin: EdgeInsets.only(left: 30.0,bottom: 10.0),
+      margin: EdgeInsets.only(left: 30.0,bottom: 10.0,right: index==1?20.0:0),
       child: Stack(
         children: [
           Column(

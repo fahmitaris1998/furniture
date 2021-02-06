@@ -27,11 +27,10 @@ class _DashboardState extends State<Dashboard> {
             Column(
               children: [
                 Expanded(child:
-                Container(
+                bottomIcons == BottomIcons.Home ? Container(
                   margin: EdgeInsets.only(bottom: 10.0),
                   child: Home(),
-
-                )
+                ):Container()
                 ),
                 Container(
                   padding: EdgeInsets.only(bottom: 20,left: 24,right: 24),
